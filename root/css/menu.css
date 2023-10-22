@@ -1,0 +1,395 @@
+html
+{
+    background:#171717;
+    font-family:"Arial Nova";
+    color: #BABDBDBD;
+}
+
+body
+{
+    font-size: 14px;
+    margin-top: 0em;
+    margin-left: 0em;
+}
+
+main
+{
+    padding: 0px 40px 40px 40px;
+}
+
+h1,h2
+{
+    text-align: center;
+}
+
+h2
+{
+    margin-top: 1em;
+}
+
+hr
+{
+    height: 1px;
+    border: none;
+    background-color: #ea1031;
+}
+/*
+a[aria-expanded="true"]{
+  border: 1px solid green;
+}
+
+a[aria-expanded="false"]{
+  border: 1px solid red;
+}
+*/
+:root
+{
+    --black: #222222;
+    --blackClear: #333333;
+    --grey: #666666;
+    --greyClear: #999999;
+    --white: #ffffff;
+}
+
+#f-menu-vertical nav.menu.hide
+{
+    width: 0px;
+    transition: width .5s ease;
+}
+
+@media screen and (max-width:576px)
+{ /*sm*/
+    body{
+        /*border: 2px solid pink;*/
+    }
+
+    #f-menu-vertical nav.menu{
+        width: 230px;
+        transition: width .5s ease;
+        overflow: hidden;
+    }
+
+    #f-menu-vertical nav.menu.hide{
+        overflow: hidden;
+    }
+
+    img#logo{
+        width: 80%;
+        margin: 20px 0px 10px 0px;
+    }
+
+}
+
+@media screen and (min-width:576px)
+{ /* sm */
+    body{
+        /*border: 2px solid red;*/
+    }
+
+    #f-menu-vertical nav.menu{
+        width: 250px;
+        transition: width .5s ease;
+    }
+
+    #f-menu-vertical nav.menu.hide{
+        width: 250px;
+    }
+    .vhamburger{
+        display: none;
+    }
+    img#logo{
+        width: 130px;
+        margin: 20px 20px 10px 0px;
+        float: left;
+    }
+}
+
+@media screen and (min-width:768px)
+{ /* md */
+    body{
+        /* border: 1px solid yellow;*/
+    }
+    img#logo{
+        width: 200px;
+    }
+
+}
+
+@media screen and (min-width:992px)
+{ /* lg */
+    body{
+        /*border: 1px solid green;*/
+    }
+
+}
+
+@media screen and (min-width:1200px)
+{ /* xl */
+}
+
+@media screen and (min-width:1400px)
+{ /* xxl */
+}
+/*
+ Backgound colors of the menu
+*/
+/* Background */
+#f-menu-horizontal .menu,
+#f-menu-horizontal .hamburger,
+#f-menu-vertical .vhamburger,
+#f-menu-vertical .menu
+{
+    background-color: #111111;
+}
+/* 2nd level background */
+#f-menu-horizontal nav.hamburger.toggled-on,
+#f-menu-horizontal nav ul li.hasChildren.active,
+#f-menu-horizontal nav .hamburger-item, nav.menu .hamburger-item ul,
+#f-menu-horizontal li.level-2,
+#f-menu-vertical li.level-2,
+#f-menu-vertical nav.menu ul li.level-1.active > div a:nth-of-type(2)
+{
+    background-color: #333333;
+}
+/* 3nd level background */
+#f-menu-horizontal li.level-3,
+#f-menu-vertical li.level-3,
+#f-menu-vertical nav.menu ul li.level-2.active > div a:nth-of-type(2)
+{
+    background-color: #555555;
+}
+/* 4nd level background */
+#f-menu-horizontal li.level-4,
+#f-menu-vertical li.level-4,
+#f-menu-vertical nav ul li.level-3.active > div a:nth-of-type(2)
+{
+    background-color: #777777;
+}
+/* Link color */
+#f-menu-horizontal a,
+#f-menu-vertical a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Hover */
+/*
+#f-menu-horizontal nav ul li:hover,
+#f-menu-vertical nav ul li a:nth-of-type(2):hover,
+#f-menu-vertical nav ul li a:nth-of-type(1):hover{
+	background-color: #222222;
+}
+*/
+/* Hover */
+#f-menu-horizontal nav ul li:hover
+{
+    background-color: #222222;
+}
+/*
+MENU
+*/
+#f-menu-horizontal
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#f-menu-horizontal nav.menu
+{
+    flex: 1 1 auto;
+}
+
+#f-menu-horizontal nav.hamburger
+{
+    flex: 0 0 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#f-menu-horizontal .menu .dropdown-toggle i
+{
+    width: 20px;
+    font-weight: 700;
+}
+
+#f-menu-horizontal nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#f-menu-vertical nav ul
+{
+    list-style: none;
+    padding: 0px;
+    margin: 0 auto;
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    */
+
+}
+
+#f-menu-horizontal nav ul li
+{
+    font-size: 1em;
+    position: relative;
+    flex: 1 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#f-menu-vertical nav ul li div
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#f-menu-vertical nav.menu ul li.hasChildren a:nth-of-type(1),
+#f-menu-vertical nav.menu ul li.hasChildren a:nth-of-type(2),
+#f-menu-vertical nav.menu ul li a:first-of-type
+{
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    /*border-right: 4px solid white;*/
+}
+
+#f-menu-vertical nav.menu ul li.hasChildren div a.dropdown-toggle
+{
+    white-space: nowrap;
+}
+
+#f-menu-vertical nav.menu ul li div a:nth-of-type(1)
+{
+    white-space: nowrap;
+    /*background-color: red;*/
+}
+
+#f-menu-vertical nav.menu ul li.hasChildren div a:nth-of-type(1)
+{
+    flex:  1 1 auto;
+    white-space: nowrap;
+
+}
+
+#f-menu-vertical nav.menu ul li.hasChildren div a:nth-of-type(2)
+{
+    flex:  0 1 30px;
+    text-align: right;
+    /*
+    background-color: orange;
+    border: 1px solid blue;
+    */
+}
+/*
+#f-menu-vertical nav.menu ul li.hasChildren div a:nth-of-type(2) i{
+	border: 1px solid white;
+}
+*/
+#f-menu-vertical nav.menu ul li div a:first-of-type
+{
+    flex:  1 1 auto;
+}
+
+#f-menu-vertical nav ul li div a
+{
+    /* Do not add .menu at nav */
+
+    padding-top: 11px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+    /*
+    width: 100%;
+    display: block;
+    float: none;
+    display: block;
+    order: 1;
+    */
+}
+
+#f-menu-vertical nav.menu ul li.hasChildren ul.sub-menu.toggled-on
+{
+    display: block;
+}
+
+.container-vertical
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-vertical main
+{
+    flex: 1 1 auto;
+}
+
+#f-menu-horizontal nav ul li.hasChildren ul.sub-menu
+{
+    position: absolute;
+}
+
+#f-menu-horizontal nav ul li div
+{
+    padding: 0.125em;
+}
+
+#f-menu-horizontal nav ul li.hasChildren ul.sub-menu, #f-menu-vertical nav.menu ul li.hasChildren ul.sub-menu
+{
+    display: none;
+    width: 100%;
+}
+
+#f-menu-horizontal nav ul li.hasChildren ul.sub-menu
+{
+    z-index: 1;
+}
+
+#f-menu-horizontal nav ul li.hasChildren ul.sub-menu, #f-menu-horizontal nav ul li.hasChildren ul.sub-menu.toggled-on
+{
+
+}
+
+#f-menu-horizontal nav ul li.hasChildren ul.sub-menu.toggled-on
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#f-menu-horizontal nav  ul li.hasChildren ul.sub-menu.toggled-on li
+{
+    flex: 1 1 auto;
+    white-space: nowrap;
+
+}
+
+#f-menu-horizontal nav ul li.hasChildren ul.sub-menu.toggled-on li.hasChildren ul.sub-menu
+{
+    position: relative;
+
+}
+
+#f-menu-horizontal .hamburger i
+{
+    width: 20px;
+}
+
+#f-menu-horizontal nav.hamburger
+{
+    display: none;
+}
+
+#footer i { width: 20px; text-align: center; }

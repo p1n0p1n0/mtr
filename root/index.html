@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu with Flexbox CSS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+    </head>
+    <!-- -->
+    <body>
+        <section class="container">
+            <!--
+            <h2>Menu horizontal</h2>
+            <div id="breadcrumb">&nbsp;</div>
+            -->
+            <div id="f-menu-horizontal">
+                <nav class="menu" aria-label="Main navigation">
+                    <ul>
+                        <!-- Quick Access -->
+                        <li class="hasChildren level-1">
+                            <div>
+                                <a href="#">Quick Access</a>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                    <i class="fa fa-angle-down">🠟</i>
+                                </a>
+                            </div>
+                            <ul class="sub-menu" role="group">
+                                <li class="hasChildren level-2">
+                                    <div>
+                                        <a href="#">Nous</a>
+                                    </div>
+                                </li>
+                                <li class="hasChildren level-2">
+
+                                    <div>
+                                        <a href="#">Histoire</a>
+                                        <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <ul class="sub-menu" role="group">
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Création</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hasChildren level-3">
+                                            <div>
+                                                <a href="#">Nos investisseurs</a>
+                                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Entreprise SA</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Association</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Fundation</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Développement</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level-2">
+                                    <div>
+                                        <a href="#">Situation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Status -->
+                        <li class="hasChildren level-1">
+                            <div>
+                                <a href="#">Status</a>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                    <i class="fa fa-angle-down">19</i>
+                                </a>
+                            </div>
+                            <ul class="sub-menu" role="group">
+                                <li class="hasChildren level-2">
+                                    <div>
+                                        <a href="#">Nous</a>
+                                    </div>
+                                </li>
+                                <li class="hasChildren level-2">
+
+                                    <div>
+                                        <a href="#">Histoire</a>
+                                        <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <ul class="sub-menu" role="group">
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Création</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hasChildren level-3">
+                                            <div>
+                                                <a href="#">Nos investisseurs</a>
+                                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Entreprise SA</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Association</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Fundation</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Développement</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level-2">
+                                    <div>
+                                        <a href="#">Situation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Processes -->
+                        <li class="hasChildren level-1">
+                            <div>
+                                <a href="#">Processes</a>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                    <i class="fa fa-angle-down">16</i>
+                                </a>
+                            </div>
+                            <ul class="sub-menu" role="group">
+                                <li class="hasChildren level-2">
+                                    <div>
+                                        <a href="#">Nous</a>
+                                    </div>
+                                </li>
+                                <li class="hasChildren level-2">
+
+                                    <div>
+                                        <a href="#">Histoire</a>
+                                        <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <ul class="sub-menu" role="group">
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Création</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hasChildren level-3">
+                                            <div>
+                                                <a href="#">Nos investisseurs</a>
+                                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Entreprise SA</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Association</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Fundation</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Développement</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level-2">
+                                    <div>
+                                        <a href="#">Situation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Warnings -->
+                        <li class="hasChildren level-1">
+                            <div>
+                                <a href="#">Warnings</a>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                    <i class="fa fa-angle-down">15</i>
+                                </a>
+                            </div>
+                            <ul class="sub-menu" role="group">
+                                <li class="hasChildren level-2">
+                                    <div>
+                                        <a href="#">Nous</a>
+                                    </div>
+                                </li>
+                                <li class="hasChildren level-2">
+
+                                    <div>
+                                        <a href="#">Histoire</a>
+                                        <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <ul class="sub-menu" role="group">
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Création</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hasChildren level-3">
+                                            <div>
+                                                <a href="#">Nos investisseurs</a>
+                                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Entreprise SA</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Association</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Fundation</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Développement</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level-2">
+                                    <div>
+                                        <a href="#">Situation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Tasks -->
+                        <li class="hasChildren level-1">
+                            <div>
+                                <a href="#">Tasks</a>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                    <i class="fa fa-angle-down">9</i>
+                                </a>
+                            </div>
+                            <ul class="sub-menu" role="group">
+                                <li class="hasChildren level-2">
+                                    <div>
+                                        <a href="#">Nous</a>
+                                    </div>
+                                </li>
+                                <li class="hasChildren level-2">
+
+                                    <div>
+                                        <a href="#">Histoire</a>
+                                        <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <ul class="sub-menu" role="group">
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Création</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hasChildren level-3">
+                                            <div>
+                                                <a href="#">Nos investisseurs</a>
+                                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Entreprise SA</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Association</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Fundation</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Développement</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level-2">
+                                    <div>
+                                        <a href="#">Situation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Audits -->
+                        <li class="hasChildren level-1">
+                            <div>
+                                <a href="#">Audits</a>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                    <i class="fa fa-angle-down">6</i>
+                                </a>
+                            </div>
+                            <ul class="sub-menu" role="group">
+                                <li class="hasChildren level-2">
+                                    <div>
+                                        <a href="#">Nous</a>
+                                    </div>
+                                </li>
+                                <li class="hasChildren level-2">
+
+                                    <div>
+                                        <a href="#">Histoire</a>
+                                        <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <ul class="sub-menu" role="group">
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Création</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hasChildren level-3">
+                                            <div>
+                                                <a href="#">Nos investisseurs</a>
+                                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Entreprise SA</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Association</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Fundation</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Développement</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level-2">
+                                    <div>
+                                        <a href="#">Situation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Transactions -->
+                        <li class="hasChildren level-1">
+                            <div>
+                                <a href="#">Transactions</a>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                    <i class="fa fa-angle-down">9</i>
+                                </a>
+                            </div>
+                            <ul class="sub-menu" role="group">
+                                <li class="hasChildren level-2">
+                                    <div>
+                                        <a href="#">Nous</a>
+                                    </div>
+                                </li>
+                                <li class="hasChildren level-2">
+
+                                    <div>
+                                        <a href="#">Histoire</a>
+                                        <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                    </div>
+
+                                    <ul class="sub-menu" role="group">
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Création</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="hasChildren level-3">
+                                            <div>
+                                                <a href="#">Nos investisseurs</a>
+                                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Entreprise SA</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Association</a>
+                                                    </div>
+                                                </li>
+                                                <li class="level-4">
+                                                    <div>
+                                                        <a href="#">Fundation</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="level-3">
+                                            <div>
+                                                <a href="#">Développement</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="level-2">
+                                    <div>
+                                        <a href="#">Situation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hasChildren level-0">
+                            <div id="header-search-field">
+                                <input type="search" id="header-search-input" />
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="hamburger">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                    <i class="fa fa-navicon"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end id="f-menu" -->
+        </section>
+        <!-- end class="container" -->
+
+        <div class="container container-vertical">
+            <aside>
+                <div id="f-menu-vertical">
+                    <nav class="vhamburger">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                        <i class="fa fa-navicon"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="menu hide" aria-label="Main navigation">
+                        <ul class="">
+                            <li class="hasChildren level-1">
+                                <div>
+                                    <a href="#">Today</a>
+                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                        3
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+
+                                <ul class="sub-menu" role="group">
+                                    <li class="hasChildren level-2">
+                                        <div>
+                                            <a href="#">Nous</a>
+                                            <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                3
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+                                        <ul class="sub-menu" role="group">
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Le groupe</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasChildren level-2">
+
+                                        <div>
+                                            <a href="#">Histoire</a>
+                                            <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                4
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+
+                                        <ul class="sub-menu" role="group">
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Création</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="hasChildren level-3">
+                                                <div>
+                                                    <a href="#">Nos investisseurs</a>
+                                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                        3
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Entreprise SA</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Association</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Fundation</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Développement</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Situation</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="hasChildren level-1">
+                                <div>
+                                    <a href="#">Urgent</a>
+                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                        3
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+
+                                <ul class="sub-menu" role="group">
+                                    <li class="hasChildren level-2">
+                                        <div>
+                                            <a href="#">Nous</a>
+                                            <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                3
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+                                        <ul class="sub-menu" role="group">
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Le groupe</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasChildren level-2">
+
+                                        <div>
+                                            <a href="#">Histoire</a>
+                                            <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                4
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+
+                                        <ul class="sub-menu" role="group">
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Création</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="hasChildren level-3">
+                                                <div>
+                                                    <a href="#">Nos investisseurs</a>
+                                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                        3
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Entreprise SA</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Association</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Fundation</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Développement</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Situation</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="hasChildren level-1">
+                                <div>
+                                    <a href="#">Current</a>
+                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                        4
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <ul class="sub-menu" role="group">
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Direction</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Secrétaires</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Collaborateurs</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Partenaires</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="hasChildren level-1">
+                                <div>
+                                    <a href="#">Weekly</a>
+                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                        4
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+                                <ul class="sub-menu" role="group">
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Direction</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Secrétaires</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Collaborateurs</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Partenaires</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="hasChildren level-1">
+                                <div>
+                                    <a href="#">Monthly</a>
+                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                        3
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                </div>
+
+                                <ul class="sub-menu" role="group">
+                                    <li class="hasChildren level-2">
+                                        <div>
+                                            <a href="#">Nous</a>
+                                            <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                3
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+                                        <ul class="sub-menu" role="group">
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Le groupe</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hasChildren level-2">
+
+                                        <div>
+                                            <a href="#">Histoire</a>
+                                            <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                4
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+
+                                        <ul class="sub-menu" role="group">
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Création</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="hasChildren level-3">
+                                                <div>
+                                                    <a href="#">Nos investisseurs</a>
+                                                    <a href="#" class="dropdown-toggle" aria-expanded="false">
+                                                        3
+                                                        <i class="fa fa-angle-down"></i>
+                                                    </a>
+                                                </div>
+                                                <ul class="sub-menu">
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Entreprise SA</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Association</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="level-4">
+                                                        <div>
+                                                            <a href="#">Fundation</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="level-3">
+                                                <div>
+                                                    <a href="#">Développement</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Situation</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="hasChildren level-1">
+                                <div>
+                                </div>
+
+                                <ul class="sub-menu" role="group">
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Adresse</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">Téléphone</a>
+                                        </div>
+                                    </li>
+                                    <li class="level-2">
+                                        <div>
+                                            <a href="#">e-mail</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="level-1">
+                                <div>
+                                    <a href="#">Options</a>
+                                </div>
+                            </li>
+
+                            <li class="level-1">
+                                <div>
+                                    <a href="#">Fields</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <main id="content">
+                <div class="container" style="margin-bottom:20px;">
+                    <h2>MTR</h2>
+                    <hr />
+                </div>
+                <!-- end class="container" -->
+                <section class="container">
+                    <noscript>JavaScript must be activate</noscript>
+                    <h3>How to start</h3>
+                    <p>Read more on <a href="https://github.com/ecosensors/fluid-menu" target="_blank">Github</a></p>
+                    <h3>Background colors of menu</h3>
+                    <p>
+                        Read more the <a href="https://github.com/ecosensors/fluid-menu/blob/main/css/f-menu.css" target="_blank">Backgound colors section</a> of the CSS file.
+                    </p>
+                    <h3>Welcome</h3>
+
+                    <img id="logo" src="img/PXL_20230407_210230010.jpg" alt="ecosensors">
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin justo mauris, ornare et lobortis pretium, volutpat a ligula. Nam finibus ut urna eu aliquam. Donec efficitur lectus in magna dignissim, et eleifend nibh tincidunt. Aenean non nisi tempus, imperdiet odio nec, finibus magna. Mauris euismod nunc eu est placerat, sed posuere elit eleifend. Ut vulputate arcu tellus, at tempus lorem finibus non.
+                    </p>
+                    <p>
+                        Sed tincidunt imperdiet dolor a ullamcorper. Ut vulputate finibus odio, in tempus dui interdum nec. Vivamus lacinia tempus tortor, ut congue ex aliquam eget. Proin ut sem nisl. Donec tincidunt tortor et quam rutrum laoreet. Suspendisse vitae varius risus. Proin eleifend condimentum hendrerit. Phasellus eu nibh neque. Integer fringilla enim et mi tempus, at accumsan justo feugiat.
+                    </p>
+                    <p>
+                        In hac habitasse platea dictumst. Proin lobortis arcu ut pellentesque aliquam. Donec vestibulum aliquet turpis, at volutpat risus gravida sit amet. Curabitur cursus sollicitudin suscipit. Integer nulla dolor, aliquam id enim eget, vehicula porta metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vehicula vulputate placerat. Nunc ipsum risus, lobortis non nisi eget, ullamcorper luctus tortor. Praesent et leo ante. Vivamus luctus, metus eu accumsan dignissim, magna magna mollis mi, ut semper nisi dolor id risus.
+                    </p>
+                    <p>
+                        Proin in sem sapien. Cras lorem es t, tempor lobortis ullamcorper quis, consectetur in risus. Donec felis metus, facilisis eu dapibus ut, venenatis id urna. Maecenas tincidunt augue et sem consequat, et gravida magna molestie. Etiam quis volutpat magna. In risus felis, consequat auctor risus vel, finibus ornare dolor. Nam at lacus hendrerit, accumsan tortor a, aliquam nisi.
+                    </p>
+                </section>
+            </main>
+        </div>
+        <!-- end class="container-vertical" -->
+
+        <footer>
+
+        </footer>
+        <!-- end class="footer" -->
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+
+        <script src="js/menu.js"></script>
+    </body>
+</html>
